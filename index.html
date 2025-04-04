@@ -24,17 +24,26 @@
         </ul>
     </nav>
 
-    <!-- Ana Sayfa İçeriği -->
-    <section id="main-content">
-        <h2>Web sahypa ýasamak kursy</h2>
-        <p>HTML, CSS ve JavaScript bilen profesyonal web sahypa ýasamany öwren. Pratika üsti bilen!</p>
-        
-        <div class="image-container">
-            <img src="https://via.placeholder.com/800x400" alt="Web Tasarımı">
+    <!-- Teknoloji Kutuları -->
+    <div class="tech-container">
+        <!-- HTML Kutusu -->
+        <div class="tech-box html-box">
+            <h3>HTML</h3>
+            <p>Web sahypasynyň esasy strukturasy. Sahypa elementlerini döretmek üçin ulanylýar.</p>
         </div>
-
-        <button id="scrollButton">Sahypany aşak çek</button>
-    </section>
+        
+        <!-- CSS Kutusu -->
+        <div class="tech-box css-box">
+            <h3>CSS</h3>
+            <p>Web sahypasynyň görnüşini we stilini düzmek üçin ulanylýar.</p>
+        </div>
+        
+        <!-- JavaScript Kutusu -->
+        <div class="tech-box js-box">
+            <h3>JavaScript</h3>
+            <p>Web sahypasyna dinamiki hereketlilik we interaktivlik bermek üçin ulanylýar.</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -42,7 +51,14 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script>
+        // Örnek JavaScript kodu
+        document.querySelectorAll('.tech-box').forEach(box => {
+            box.addEventListener('click', function() {
+                alert(this.querySelector('h3').textContent + ' hakynda has giňişleýin maglumat!');
+            });
+        });
+    </script>
 
 </body>
 </html>
