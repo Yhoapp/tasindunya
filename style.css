@@ -1,155 +1,161 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #333;
+}
 
-        /* Genel Stiller */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
+/* Header */
+header {
+    background: linear-gradient(to right, #4f9c9b, #5f2c8f);  /* Canlı mavi ve mor geçişi */
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        /* Header */
-        header {
-            background: linear-gradient(to right, #4f9c9b, #5f2c8f);
-            color: white;
-            padding: 40px 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            animation: fadeIn 1.5s ease-in-out;
-        }
+header p {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+}
 
-        header p {
-            font-size: 1.2rem;
-            color: #d0d0d0;
-        }
+/* Navigasyon Menüsü */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        /* Navigasyon Menüsü */
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
+nav ul li {
+    margin: 10px 15px;
+}
 
-        nav ul li {
-            margin: 10px 15px;
-        }
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            background-color: #007bff;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
+nav a:hover {
+    background-color: #ff8c00; /* Turuncu hover efekti */
+}
 
-        nav a:hover {
-            background-color: #ff8c00;
-        }
+/* İçerik Alanı */
+section {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1100px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
 
-        /* Teknoloji Kutuları */
-        .tech-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px;
-            flex-wrap: wrap;
-        }
+section h2 {
+    font-size: 2rem;
+    color: #333;
+}
 
-        .tech-box {
-            flex: 1;
-            min-width: 250px;
-            max-width: 350px;
-            background-color: white;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
+section p {
+    font-size: 1.2rem;
+    color: #555;
+}
 
-        .tech-box:hover {
-            transform: translateY(-10px);
-        }
+.image-container {
+    margin-top: 20px;
+    position: relative;
+    animation: slideIn 2s ease-out;
+}
 
-        .tech-box h3 {
-            font-size: 1.8rem;
-            color: #333;
-            margin-top: 0;
-        }
+.image-container img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
 
-        .tech-box p {
-            font-size: 1.1rem;
-            color: #555;
-        }
+.image-container img:hover {
+    transform: scale(1.05); /* Görseller üzerine gelince büyüme efekti */
+}
 
-        /* HTML Kutusu */
-        .html-box {
-            border-top: 5px solid #e34c26;
-        }
+button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
 
-        /* CSS Kutusu */
-        .css-box {
-            border-top: 5px solid #2965f1;
-        }
+button:hover {
+    background-color: #0056b3; /* Button hover rengi */
+}
 
-        /* JavaScript Kutusu */
-        .js-box {
-            border-top: 5px solid #f0db4f;
-        }
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
 
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            font-size: 1rem;
-            text-align: center;
-        }
+/* Animasyonlar */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
-        /* Animasyonlar */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+@keyframes slideIn {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
 
-        /* Mobil Uyumluluk */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
+/* Mobil Uyumluluk */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
+    nav ul {
+        flex-direction: column;  /* Menü öğelerini dikey yerleştir */
+    }
 
-            nav ul li {
-                margin: 8px 0;
-                width: 80%;
-                text-align: center;
-            }
+    nav ul li {
+        margin: 10px 0;
+    }
 
-            nav a {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
-            }
+    section {
+        width: 90%;
+    }
 
-            .tech-box {
-                min-width: 100%;
-                margin-bottom: 20px;
-            }
-        }
+    section h2 {
+        font-size: 1.5rem;
+    }
 
-    
+    section p {
+        font-size: 1rem;
+    }
+}
